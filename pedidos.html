@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Pedidos do dia</h1>
+
+    <div>
+        <p>
+            Itens do Pedido: <br>
+            Pizza<input type="checkbox" id="pizzaInput" checked onclick="mostrarOpcs()">
+            <select id="tamanho" style="display: inline;">
+                <option value="pequena">Pequena</option>
+                <option value="média">Média </option>
+                <option value="grande">Grande</option>
+            </select>
+            Bebida<input type="checkbox" id="bebidaInput" onclick="mostrarOpcs()">
+            <select id="bebidas" style="display: none; width: auto;">
+                <option value="Pedido sem bebida">Pedido sem bebida</option>
+                <option value="Refrigerante">Refrigerante</option>
+                <option value="Suco">Suco</option>
+            </select>
+        </p>
+    </div>
+
+    <div>
+        <p>Detalhes do Pedido: <input type="text" id="detalhes" placeholder="Até 02 sabores por pizza">
+        <button onclick="adcItens()">Adicionar</button></p>
+    </div>
+    <div id="pedidos">
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
