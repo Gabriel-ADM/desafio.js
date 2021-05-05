@@ -5,5 +5,10 @@ button{
     border-color: rgb(52, 94, 233);
     border-radius: 15%;
     background-color: white;
+    cursor: pointer;
 }
 
+input, h2{
+    display: inline;
+    margin-bottom: 15px;
+}
